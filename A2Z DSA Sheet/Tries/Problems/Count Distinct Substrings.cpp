@@ -30,8 +30,8 @@ public:
             int i=it-'a';
             if(!temp->child[i])
                 temp->child[i]=new TrieNode();
-            temp->prefcnt++;
             temp=temp->child[i];
+            temp->prefcnt++;
         }
         temp->isWord=true;
         temp->wdcnt++;
